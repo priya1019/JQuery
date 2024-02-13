@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!--html5, optional-->
+<html>
+    <head>
+        <title>First HTML Page</title>
+        <meta charset = "UTF-8"><!-- Unicode Transformation Format-->
+        <meta name = "description" content = "breif description of web page">
+        <meta name = "keywords" content = "important words of web page">
+        <meta name = "author" content = "name of author of web page ">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <script src="Library/jquery-3.6.0.min.js"> </script>
+       <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.mn.js"></script> -->
+        <script>
+            let colArray=['pink' ,'orange' , 'green'];
+            let i=0;
+            $(function(){
+                $('#art').css(
+                    {
+                        height: '300px',
+                        width: '300px' ,
+                        border: '2px dashed blue' ,
+                        borderRadius: '50px' ,
+                        backgroundColor: 'yellow'
+                    }
+                );
+                    setInterval(function(){
+                        changeColor();
+                    },2000);
+                        function changeColor(){
+                            $('#art').css({backgroundColor:colArray[i]});
+                            if(i==(colArray.length-1))
+                            i=0;
+                            else
+                            i++; 
+                      }
+
+
+            });
+
+
+        </script>
+       
+
+    </head>
+    <body>
+        <article id="art">
+        <div>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+        India is my country<br>
+
+        </div>
+    </article>
+    </body>
+</html>

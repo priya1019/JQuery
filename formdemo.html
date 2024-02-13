@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>form demo</title>
+        <style>
+            span{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="success.html" onsubmit="return validateForm()" novalidate> 
+            <label for="name">Enter Name : </label>
+            <input type="text" id="name" required><br>
+            <span id="err1"></span><br><br>
+            <label for="num">Enter Age:</label>
+            <input type="number" id="num" ><br>
+            <span id="err2"></span><br><br>
+            <label for="email">Enter email</label>
+            <input type="text" id="email" >
+            <span id="err3"></span><br><br>
+            <label for="pass">Enter Password</label>
+            <input type="password" id="pass">
+            <span id="err4"></span><br><br>
+            <label for="pass1">Confirm</label> Password</label>
+            <input type="password" id="pass1">
+            <span id="err5"></span><br><br>
+            <label> <input type="checkbox" id="show" >Show Password</label>
+            <br><br>
+    
+
+            <input type="submit">
+        </form>
+
+        <script src="Library/jquery-3.6.0.min.js"></script>
+        <script src="Library/validation.js"></script>
+    </body>
+</html>
